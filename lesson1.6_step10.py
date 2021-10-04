@@ -7,9 +7,6 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    #elems = browser.find_elements_by_css_selector(".first_block input")
-    #for elem in elems:
-    #    elem.send_keys("text example")
 
     first_name = browser.find_element_by_css_selector("div.first_block .form-control.first")
     first_name.send_keys("Ivan")
